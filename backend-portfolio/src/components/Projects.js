@@ -33,16 +33,16 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div key={index} className="bg-gray-800 p-6 rounded-lg">
               <a href={project.live || project.github} target="_blank" rel="noreferrer">
-                <div className="h-48 overflow-hidden mb-4">
+                <div className="h-40 sm:h-48 overflow-hidden mb-4">
                   <img 
                     src={project.image} 
                     alt={project.name} 
-                    className="w-full h-full object-contain" // Ensure full width and height fit
+                    className="w-full h-full object-contain" 
                   />
                 </div>
               </a>
-              <h3 className="text-2xl font-bold mb-4">{project.name}</h3>
-              <p className="mb-6">{project.description}</p>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4">{project.name}</h3>
+              <p className="text-sm sm:text-base mb-6">{project.description}</p>
               <div className="flex justify-between">
                 <a href={project.github} className="text-blue-400" target="_blank" rel="noreferrer">
                   <FaGithub size={24} />
