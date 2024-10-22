@@ -5,12 +5,13 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Certifications from './components/Certifications';
-
+import TechStack from './components/TechStack';
 function App() {
   return (
     <div>
       <Landing />
       <About />
+      <TechStack/>
       <Projects />
       <Certifications/>
       <Contact />
