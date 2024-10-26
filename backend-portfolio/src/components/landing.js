@@ -117,7 +117,7 @@ const Landing = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Backend Developer | Python | Django | Focused on Efficient Web Solutions | Experienced with REST APIs and Django REST Framework
+        Backend Developer | C++ | Python | Django | Focused on Efficient Web Solutions | Experienced with REST APIs and Django REST Framework
       </motion.h2>
       <motion.button
         className="bg-blue-500 px-4 sm:px-6 py-2 sm:py-3 text-lg rounded-full hover:bg-blue-700"
