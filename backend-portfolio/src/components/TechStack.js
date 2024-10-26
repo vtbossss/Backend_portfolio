@@ -35,7 +35,7 @@ const TechStack = () => {
   return (
     <div id="techstack" className="bg-gray-800 text-white py-20">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-light-blue-400 mb-8">Tech Stack</h2>
+        <h2 className="text-4xl font-bold text-light-blue-400 mb-8">Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {techStack.map((item, index) => (
             <div key={index} className="bg-gray-700 p-6 rounded-lg shadow-lg">

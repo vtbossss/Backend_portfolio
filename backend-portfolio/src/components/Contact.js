@@ -8,6 +8,9 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold mb-6">Contact Me</h2>
         <p className="text-lg mb-6">Feel free to reach out for collaborations or job opportunities!</p>
+        <p className="text-lg mb-6">
+          Email: <a href="mailto:tiwarijivaibhav@gmail.com" className="text-blue-400">tiwarijivaibhav@gmail.com</a>
+        </p>
         <div className="flex space-x-4">
           <a href="https://github.com/vtbossss" target="_blank" rel="noreferrer">
             <FaGithub size={30} />
