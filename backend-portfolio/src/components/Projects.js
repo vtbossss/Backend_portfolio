@@ -39,6 +39,13 @@ const projects = [
     image: '/weather_monitoring.png', // Path to the image
     techStack: ['Django', 'Celery', 'Redis','SSE','Docker'], // Added tech stack
   },
+  {
+    name: 'TRIV (Under Development)',
+    description: 'TRIV (Trends and Real-Time Interactive Visualization) is a Django-based web platform focused on agriculture that provides real-time data insights into soil and vegetation health to support precision farming. By integrating APIs like Agromonitoring, it streams soil and weather data while using Kafka and WebSockets to enable live updates. TRIV’s unique 3D visualizations, created with 3.js, allow users to monitor and analyze indices like NDVI in an interactive format, helping farmers make data-driven decisions. The project is also designed to allow future features like custom polygon data input for personalized area monitoring.',
+    github: 'https://github.com/vtbossss/TRIV', // Update with the actual GitHub link if available
+    image: '/triv.png', // Path to the image
+    techStack: ['Websockets', 'Kafka', 'Redis','Django','Docker'], // Added tech stack
+  },
 ];
 
 const Projects = () => {
