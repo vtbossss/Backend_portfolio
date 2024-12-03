@@ -3,50 +3,63 @@ import { FaGithub, FaLink } from 'react-icons/fa';
 
 const projects = [
   {
-    name: 'How To Fit',
-    description: 'How To Fit is a fitness app that helps users track their fitness through various calculators, including BMI, macro, and calorie calculators. The app offers personalized diet plans to help users achieve their fitness goals. User authentication is implemented to ensure secure access to personalized features. The application is containerized using Docker for seamless deployment and scalability. It is deployed on PythonAnywhere for easy accessibility and maintainability.',
-    github: 'https://github.com/vtbossss/htf-fitness-web-application--Django-project',
-    live: 'https://vtbossss.pythonanywhere.com',
-    image: '/how_to_fit.png', // Path to the image
-    techStack: ['Django', 'Docker', 'Sqlite', 'Bootstrap'], // Added tech stack
+    name: 'Shelvify',
+    description: 'Shelvify is a Django-based Inventory Management System designed for secure and scalable inventory tracking. It features JWT-based authentication and RBAC to ensure role-specific access for Admins, Managers, and Staff. Key functionalities include task assignment, real-time inventory updates, and analytics. The application is containerized with Docker and deployed on PythonAnywhere with HTTPS.',
+    github: 'https://github.com/vtbossss/Shelvify',
+    live: 'https://shelvify.pythonanywhere.com',
+    image: '/shelvify.png',
+    techStack: ['Django', 'JWT', 'RBAC', 'Docker', 'PythonAnywhere'],
+  },
+  {
+    name: 'TRIV',
+    description: 'TRIV (Trends and Real-Time Interactive Visualization) is a Django web platform providing real-time insights into soil and vegetation health for precision farming. By integrating APIs like Agromonitoring, it streams live weather data using Kafka and WebSockets. The app includes 3D visualizations with 3.js for analyzing indices like NDVI, helping farmers make data-driven decisions.',
+    github: 'https://github.com/vtbossss/TRIV',
+    live: null,
+    image: '/triv.png',
+    techStack: ['WebSockets', 'Kafka', 'Redis', 'Django', 'Docker'],
   },
   {
     name: 'SEENEMA API',
-    description: 'SEENEMA API is a RESTful API designed for managing movie watchlists, built with Django REST Framework. It features JWT token authentication for secure access and is documented using DRF Spectacular and Swagger, ensuring comprehensive integration. Users can easily add, remove, and manage their movie lists, making it a valuable tool for film enthusiasts. This API is deployed on PythonAnywhere.',
+    description: 'SEENEMA API is a RESTful API for managing movie watchlists, built with Django REST Framework. It features secure JWT-based authentication and API documentation using Swagger. Users can create, update, and manage watchlists easily. The API is deployed on PythonAnywhere for global accessibility.',
     github: 'https://github.com/vtbossss/SEE-NEMA-API',
     live: 'https://seenema.pythonanywhere.com/api/',
-    image: '/seenema_api.png', // Path to the image
-    techStack: ['Django','Django REST Framework', 'JWT', 'DRF Spectacular', 'Swagger'], // Added tech stack
-  },
-  {
-    name: 'Security DBMS',
-    description: 'Security DBMS is a database management system built with Python and MySQL Connector, designed for the efficient management of security-related records and data. Users can perform CRUD operations easily without typing extensive SQL queries in the terminal, thanks to its user-friendly interface. This application prioritizes accessibility for non-technical staff and is deployed on PythonAnywhere for convenient and reliable use for the users.',
-    github: 'https://github.com/vtbossss/SecurityManagement',
-    image: '/security_dbms.png', // Path to the image
-    techStack: ['Python', 'MySQL', 'Python-MySql Connector(ODBC)'], // Added tech stack
+    image: '/seenema_api.png',
+    techStack: ['Django REST Framework', 'JWT', 'Swagger', 'PythonAnywhere'],
   },
   {
     name: 'Rule Engine API',
-    description: 'The Rule Engine API is a robust 3-tier application designed to determine user eligibility based on attributes such as age, department, income, and spending patterns. Built with Django REST Framework, it utilizes an Abstract Syntax Tree (AST) structure for dynamic rule creation and evaluation. This flexibility enables organizations to implement complex eligibility criteria that adapt to changing requirements. Additionally, the API supports efficient rule management, facilitating integration into existing systems. With its modular design and powerful capabilities, the Rule Engine API is an invaluable tool for automating decision-making processes.',
-    github: 'https://github.com/vtbossss/ZeotapA1', // Update with the actual GitHub link if available
-    image: '/rule_engine.png', // Path to the image
-    techStack: ['Django REST Framework', 'JWT', 'AST',], // Added tech stack
+    description: 'The Rule Engine API determines user eligibility dynamically using rules based on attributes like age and income. Built with Django REST Framework, it uses an Abstract Syntax Tree (AST) for dynamic rule evaluation. This API is designed for flexible rule creation and management, enabling seamless integration into enterprise systems.',
+    github: 'https://github.com/vtbossss/ZeotapA1',
+    live: null,
+    image: '/rule_engine.png',
+    techStack: ['Django REST Framework', 'JWT', 'AST'],
   },
   {
     name: 'Realtime Weather Monitoring',
-    description: 'This Weather Monitoring system processes real-time weather data using the OpenWeatherMap API and provides insights through daily summaries and visualizations. The application allows users to set customizable alerts for various metrics and view data trends. Built with Django and Celery for background task processing, it supports data rollups and aggregations, making it valuable for tracking weather patterns over time. Additionally, the weather data is updated every minute using server-side events, ensuring that users receive the latest information without the need to reload the application.',
-    github: 'https://github.com/vtbossss/ZeotapA2', // Update with the actual GitHub link if available
-    image: '/weather_monitoring.png', // Path to the image
-    techStack: ['Django', 'Celery', 'Redis','SSE','Docker'], // Added tech stack
+    description: 'This system processes real-time weather data using OpenWeatherMap API and provides visual insights with daily summaries. Built with Django and Celery for background tasks, it features real-time updates using server-side events (SSE). Users can set custom alerts and track weather patterns effortlessly.',
+    github: 'https://github.com/vtbossss/ZeotapA2',
+    live: null,
+    image: '/weather_monitoring.png',
+    techStack: ['Django', 'Celery', 'Redis', 'SSE', 'Docker'],
   },
   {
-    name: 'TRIV (Under Development)',
-    description: 'TRIV (Trends and Real-Time Interactive Visualization) is a Django-based web platform focused on agriculture that provides real-time data insights into soil and vegetation health to support precision farming. By integrating APIs like Agromonitoring, it streams soil and weather data while using Kafka and WebSockets to enable live updates. TRIV’s unique 3D visualizations, created with 3.js, allow users to monitor and analyze indices like NDVI in an interactive format, helping farmers make data-driven decisions. The project is also designed to allow future features like custom polygon data input for personalized area monitoring.',
-    github: 'https://github.com/vtbossss/TRIV', // Update with the actual GitHub link if available
-    image: '/triv.png', // Path to the image
-    techStack: ['Websockets', 'Kafka', 'Redis','Django','Docker'], // Added tech stack
+    name: 'How To Fit',
+    description: 'How To Fit is a fitness app featuring calculators for BMI, macros, and calories. It provides personalized diet plans and secure user authentication. Built with Django and Bootstrap, the app is containerized using Docker and deployed on PythonAnywhere for seamless accessibility.',
+    github: 'https://github.com/vtbossss/htf-fitness-web-application--Django-project',
+    live: 'https://vtbossss.pythonanywhere.com',
+    image: '/how_to_fit.png',
+    techStack: ['Django', 'Docker', 'SQLite', 'Bootstrap'],
+  },
+  {
+    name: 'Security DBMS',
+    description: 'Security DBMS is a user-friendly database management system for security records, built with Python and MySQL Connector. It enables easy CRUD operations without requiring SQL expertise. The system is deployed on PythonAnywhere for reliable and accessible use.',
+    github: 'https://github.com/vtbossss/SecurityManagement',
+    live: null,
+    image: '/security_dbms.png',
+    techStack: ['Python', 'MySQL', 'MySQL Connector (ODBC)'],
   },
 ];
+
 
 const Projects = () => {
   return (

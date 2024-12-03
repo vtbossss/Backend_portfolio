@@ -11,11 +11,11 @@ const techStack = [
   },
   {
     category: 'Languages',
-    skills: ['Python', 'C++', 'Java', 'C#'],
+    skills: ['Python', 'C++', 'Java'],
   },
   {
     category: 'Tools',
-    skills: ['Docker', 'ODBC', 'SQLAlchemy', 'Postman', 'Firebase'],
+    skills: ['Docker', 'ODBC', 'SQLAlchemy', 'Postman', 'Redis','Kafka','NGINX'],
   },
   {
     category: 'Databases',
